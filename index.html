@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lucifear — Kovak's personal server &amp; dev projects</title>
+<meta name="description" content="Personal developer page of kyubiez96 (Kovak): home server notes, open-source projects, retro game reverse engineering and tooling.">
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --muted:#9da7b3; --accent:#f47067; --accent2:#79c0ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; }
+  main { max-width:860px; margin:0 auto; padding:48px 20px 64px; }
+  header { border-bottom:1px solid var(--border); padding-bottom:28px; margin-bottom:32px; }
+  h1 { font-size:2.4rem; margin:0 0 6px; }
+  h1 .dot { color:var(--accent); }
+  .tagline { color:var(--muted); font-size:1.05rem; margin:0; }
+  h2 { font-size:1.35rem; margin:36px 0 14px; border-bottom:1px solid var(--border); padding-bottom:6px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; }
+  .card h3 { margin:0 0 6px; font-size:1.08rem; }
+  .card p { margin:0; color:var(--muted); }
+  a { color:var(--accent2); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  code { background:#21262d; padding:1px 6px; border-radius:5px; font-size:.92em; }
+  ul { padding-left:20px; color:var(--muted); }
+  footer { margin-top:48px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--border); padding-top:18px; }
+  .badge { display:inline-block; border:1px solid var(--border); border-radius:999px; padding:2px 10px; font-size:.8rem; color:var(--muted); margin-right:6px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>lucifear<span class="dot">.</span></h1>
+    <p class="tagline">Personal server &amp; developer homepage of <strong>kyubiez96</strong> (Kovak) — Jakarta, Indonesia.</p>
+    <p>
+      <span class="badge">personal project</span>
+      <span class="badge">non-commercial</span>
+      <span class="badge">software development</span>
+    </p>
+  </header>
+
+  <section>
+    <h2>About this site</h2>
+    <p>
+      <strong>lucifear</strong> is the name of my personal server, which I use to run and test the
+      software projects listed below: game modding tools, reverse-engineering work, small web
+      services and automation I build in my spare time. This page is the public homepage for that
+      server and an index of the projects hosted on it. Everything here is a personal,
+      non-commercial hobby project.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/kyubiez96/KuroPatch">KuroPatch</a></h3>
+      <p>Android patching tooling for game translation and modding workflows — patch creation,
+      application and verification, built with Kotlin and Gradle.</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/kyubiez96/KuroGBA">KuroGBA</a></h3>
+      <p>A Game Boy Advance emulator build for Android based on mGBA, packaged as a lightweight
+      offline APK with no internet permission.</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/kyubiez96/secret-sniffer">secret-sniffer</a></h3>
+      <p>A small security utility that scans projects for accidentally committed secrets and
+      credentials before they are published.</p>
+    </div>
+
+    <div class="card">
+      <h3>Harvest Moon: Back to Nature — recompiled port (in progress)</h3>
+      <p>Static recompilation research on the PlayStation 1 game: decompilation matching,
+      overlay analysis, and a native PC/Android port built on top of a byte-identical vanilla
+      rebuild of the original disc.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal knowledge base &amp; automation</h3>
+      <p>A searchable local knowledge base of my security-research notes, plus small automation
+      agents that help with recon triage, documentation and day-to-day development tasks on the
+      lucifear server.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The server</h2>
+    <ul>
+      <li>Hostname: <code>lucifear</code> — a small Linux VPS in Jakarta, online 24/7.</li>
+      <li>Used for: hosting the projects above, CI-style build checks, and personal services
+      behind my own domain.</li>
+      <li>This <code>lucifear.is-a.dev</code> address is the backup public name for the server
+      homepage, pointing at the same site you are reading now.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>GitHub: <a href="https://github.com/kyubiez96">github.com/kyubiez96</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 kyubiez96 — personal, non-commercial developer page. Built with plain HTML/CSS, hosted on GitHub Pages.</p>
+  </footer>
+</main>
+</body>
+</html>
